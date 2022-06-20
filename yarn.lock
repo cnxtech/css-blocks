@@ -9554,18 +9554,31 @@ in-publish@^2.0.0:
 
 "in-repo-addon@link:./packages/@css-blocks/ember-cli/tests/dummy/lib/in-repo-addon":
   version "0.0.0"
-  uid ""
+  dependencies:
+    "@css-blocks/ember-cli" "*"
+    ember-cli "*"
+    ember-cli-babel "^6.16.0"
+    ember-cli-htmlbars "*"
 
 "in-repo-addon@link:./packages/@css-blocks/ember-cli/tests/dummy/lib/in-repo-engine/tests/dummy/lib/in-repo-addon":
   version "0.0.0"
 
 "in-repo-engine@link:./packages/@css-blocks/ember-cli/tests/dummy/lib/in-repo-engine":
   version "0.0.0"
-  uid ""
+  dependencies:
+    "@css-blocks/ember-cli" "*"
+    ember-cli "*"
+    ember-cli-babel "^6.16.0"
+    ember-cli-htmlbars "*"
+    in-repo-addon "link:./packages/@css-blocks/ember-cli/tests/dummy/lib/in-repo-engine/tests/dummy/lib/in-repo-addon"
 
 "in-repo-lazy-engine@link:./packages/@css-blocks/ember-cli/tests/dummy/lib/in-repo-lazy-engine":
   version "0.0.0"
-  uid ""
+  dependencies:
+    "@css-blocks/ember-cli" "*"
+    ember-cli "*"
+    ember-cli-babel "^6.16.0"
+    ember-cli-htmlbars "*"
 
 indent-string@^2.1.0:
   version "2.1.0"
@@ -11995,9 +12008,9 @@ morgan@^1.9.1:
     on-headers "~1.0.1"
 
 mout@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/mout/-/mout-1.1.0.tgz#0b29d41e6a80fa9e2d4a5be9d602e1d9d02177f6"
-  integrity sha512-XsP0vf4As6BfqglxZqbqQ8SR6KQot2AgxvR0gG+WtUkf90vUXchMOZQtPf/Hml1rEffJupqL/tIrU6EYhsUQjw==
+  version "1.2.3"
+  resolved "https://registry.npmjs.org/mout/-/mout-1.2.3.tgz#bd1477d8c7f2db5fcf43c91de30b6cc746b78e10"
+  integrity sha512-vtE+eZcSj/sBkIp6gxB87MznryWP+gHIp0XX9SKrzA5TAkvz6y7VTuNruBjYdJozd8NY5i9XVIsn8cn3SwNjzg==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
